@@ -13,8 +13,8 @@ ARIMA的建模思路大致如下：
 即：
 1. 对序列绘图，进行平稳性检验，观察序列是否平稳；对于非平稳时间序列要先进行d 阶差分,转化为平稳时间序列；
 2. 过第一步处理，已经得到平稳时间序列。要对平稳时间序列分别求得其自相关系数（ACF）和偏自相关系数（PACF），通过对自相关图和偏自相关图的分析或通过AIC/BIC搜索，得到最佳的阶数p、q；
-3. 
+3. 以上得到的d、q、P，得到 ARIMA 模型。然后开始对得到的模型进行模型检验。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA3Mzg2NTU1LDU2OTg5MTY4Niw0MjI4ND
+eyJoaXN0b3J5IjpbOTg1NjM5NjU5LDU2OTg5MTY4Niw0MjI4ND
 g1MDNdfQ==
 -->
