@@ -35,11 +35,11 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 
 在这个公式中：
 - $Y_t$ 是我们正在考虑的时间序列数据。
-- $\varphi_1$到$\varphi_p$ 是AR模型的参数，这些参数用来描述当前值与过去p个时间点值之间的关系。
-- $\theta_1$到$\theta_q$ 是MA模型的参数，这些参数用来描述当前值与过去q个时间点的误差之间的关系。
+- $\varphi_1$到 $\varphi_p$ 是AR模型的参数，这些参数用来描述当前值与过去p个时间点值之间的关系。
+- $\theta_1$到 $\theta_q$ 是MA模型的参数，这些参数用来描述当前值与过去q个时间点的误差之间的关系。
 - $\epsilon_t$是在t时间点的误差项。
 - $c$是一个常数项。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzkyMTk4NTMsLTMxMjk3NzU5NSw1Nj
-k4OTE2ODYsNDIyODQ4NTAzXX0=
+eyJoaXN0b3J5IjpbMTE2MTIwNjE2NywtMzEyOTc3NTk1LDU2OT
+g5MTY4Niw0MjI4NDg1MDNdfQ==
 -->
