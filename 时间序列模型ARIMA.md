@@ -51,7 +51,9 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 另外，这个公式的基础是假设我们正在处理的时间序列是平稳的，这样我们可以直接应用AR和MA模型。如果时间序列是非平稳的，那么我们就需要考虑ARIMA模型中的“I”部分，也就是进行差分处理。
 
 上述模型被称之为ARIMA(p,d,q)模型，其中p和q的含义与原始MA、AR模型中完全一致，且p和q可以被设置为不同的数值，而d是ARIMA模型需要的差分的阶数。
+
+>参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNTYwNzI4MSwtMzEyOTc3NTk1LDU2OT
+eyJoaXN0b3J5IjpbMTgwMjQ2ODM3MywtMzEyOTc3NTk1LDU2OT
 g5MTY4Niw0MjI4NDg1MDNdfQ==
 -->
