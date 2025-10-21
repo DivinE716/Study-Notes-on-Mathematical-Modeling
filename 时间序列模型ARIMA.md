@@ -7,8 +7,9 @@
 2. **时点序列**中的观测值反映现象在某一瞬间上所达到的水平，不同时期的观测值**不能相加**，相加结果没有实际意义，如某地每隔一小时测得的温度数据。
 
 ARIMA的建模思路大致如下：
+
 ![ARIMA模型大纲](/imgs/2025-10-21/xpN6co0D9f09Au2H.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTQyNzI0NCw0MjI4NDg1MDNdfQ==
+eyJoaXN0b3J5IjpbNTY5ODkxNjg2LDQyMjg0ODUwM119
 -->
