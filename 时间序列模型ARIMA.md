@@ -43,6 +43,7 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 这个公式基本上是将AR模型和MA模型的公式组合在一起: 
 
 1、AR部分（即 $\varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p}$）表示当前值 $Y_t$ 与它过去的值有关，这个部分的形式与AR模型的公式一致。
+
 2、MA部分（即 $\theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2} + \dots + \theta_q \epsilon_{t-q}$）表示当前值 $Y_t$ 与它过去的误差项有关，这个部分的形式与MA模型的公式一致。
 
 不难发现，MA模型中代表长期趋势的均值 $\mu$ 并不存在于ARIMA模型的公式当中，因为ARIMA模型中“预测长期趋势”这部分功能由AR模型来执行，因此AR模型替代了原本的 $\mu$ 。值得注意的是，在ARIMA模型中， $c$ 可以为0。
@@ -51,6 +52,6 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 
 上述模型被称之为ARIMA(p,d,q)模型，其中p和q的含义与原始MA、AR模型中完全一致，且p和q可以被设置为不同的数值，而d是ARIMA模型需要的差分的阶数。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1ODI4NzksLTMxMjk3NzU5NSw1Njk4OT
-E2ODYsNDIyODQ4NTAzXX0=
+eyJoaXN0b3J5IjpbMTAyNTYwNzI4MSwtMzEyOTc3NTk1LDU2OT
+g5MTY4Niw0MjI4NDg1MDNdfQ==
 -->
