@@ -6,8 +6,8 @@
 1. **时期序列**中的观测值反映现象在一段时期内发展过程的总量，不同时期的观测值**可以相加**，相加结果表明现象在更长一段时间内的活动总量，如中国过去10年的GDP序列；
 2. **时点序列**中的观测值反映现象在某一瞬间上所达到的水平，不同时期的观测值**不能相加**，相加结果没有实际意义，如某地每隔一小时测得的温度数据。
 
-
+ARIMA的建模思路da
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjAyODk2NzksNDIyODQ4NTAzXX0=
+eyJoaXN0b3J5IjpbLTcyODQ1NzA1Myw0MjI4NDg1MDNdfQ==
 -->
