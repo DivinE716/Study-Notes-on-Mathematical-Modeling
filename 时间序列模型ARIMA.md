@@ -21,8 +21,23 @@ ARIMA的建模思路大致如下：
 2. 过第一步处理，已经得到平稳时间序列。要对平稳时间序列分别求得其自相关系数（ACF）和偏自相关系数（PACF），通过对自相关图和偏自相关图的分析或通过AIC/BIC搜索，得到最佳的阶数p、q；
 3. 以上得到的d、q、P，得到 ARIMA 模型。然后开始对得到的模型进行模型检验。
 
-##2. 
+## 2. 模型公式推导
+
+先回顾一下AR和MA模型的数学表达式: 
+
+$$AR: Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + \xi_t \tag{1}$$
+
+$$MA: Y_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2} + \dots + \theta_q \epsilon_{t-q} \tag{2}$$ 
+
+如果我们暂时不考虑差分（即假设d=0），那么ARIMA模型可以被看作是AR模型和MA模型的直接结合，形式上看，ARIMA模型的公式可以表示为：
+
+$$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2} + \dots + \theta_q \epsilon_{t-q} + \epsilon_t \tag{3}$$
+在这个公式中：
+- $Y_t$ 是我们正在考虑的时间序列数据。
+- $\varphi_1$到$\varphi_p$ 是AR模型的参数，这些参数用来描述当前值与过去p个时间点值之间的关系。
+- $\theta_1$到$\theta_q$ 是MA模型的参数，这些参数用来描述当前值与过去q个时间点的误差之间的关系。
+- $\epsilon_t$是在t时间点的误差项。 - c是一个常数项。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjAyOTEwNSwtMzEyOTc3NTk1LDU2OT
-g5MTY4Niw0MjI4NDg1MDNdfQ==
+eyJoaXN0b3J5IjpbNTg4ODY5MzcsLTMxMjk3NzU5NSw1Njk4OT
+E2ODYsNDIyODQ4NTAzXX0=
 -->
