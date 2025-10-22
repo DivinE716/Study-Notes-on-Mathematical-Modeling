@@ -52,8 +52,11 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 
 上述模型被称之为ARIMA(p,d,q)模型，其中p和q的含义与原始MA、AR模型中完全一致，且p和q可以被设置为不同的数值，而d是ARIMA模型需要的差分的阶数。
 
+## 差分
+
+
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMjQ2ODM3MywtMzEyOTc3NTk1LDU2OT
-g5MTY4Niw0MjI4NDg1MDNdfQ==
+eyJoaXN0b3J5IjpbODQ2Mjc0ODksMTgwMjQ2ODM3MywtMzEyOT
+c3NTk1LDU2OTg5MTY4Niw0MjI4NDg1MDNdfQ==
 -->
