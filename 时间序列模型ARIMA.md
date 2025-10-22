@@ -138,7 +138,7 @@ PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段�
 
 如果我们有一个时间序列 ${X_t}$，那么对于任意的滞后（lag）k，偏自相关函数 $\varphi(k)$ 可以表示为：
 
-$$\varphi(k)=Cov(X_t-E[X_t|X_{t-1},\dots,X_{t-k+1}],X_{t-k}-E[X_{t-k}|X_{t-k+1},\dots,X_{t-1}]){Var}$$
+$$\varphi(k)=\frac{Cov(X_t-E[X_t|X_{t-1},\dots,X_{t-k+1}],X_{t-k}-E[X_{t-k}|X_{t-k+1},\dots,X_{t-1}])}{Var(X_t)}$$
 
 
 
@@ -146,7 +146,7 @@ $$\varphi(k)=Cov(X_t-E[X_t|X_{t-1},\dots,X_{t-k+1}],X_{t-k}-E[X_{t-k}|X_{t-k+1},
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDI4Nzk3NzYsOTY1Mjg0MDg1LDQzMj
-Q0Mjg0MSwxMTI0MzU2ODg4LDE4MDI0NjgzNzMsLTMxMjk3NzU5
-NSw1Njk4OTE2ODYsNDIyODQ4NTAzXX0=
+eyJoaXN0b3J5IjpbMTkyNDk0Mzk4MCw5NjUyODQwODUsNDMyND
+QyODQxLDExMjQzNTY4ODgsMTgwMjQ2ODM3MywtMzEyOTc3NTk1
+LDU2OTg5MTY4Niw0MjI4NDg1MDNdfQ==
 -->
