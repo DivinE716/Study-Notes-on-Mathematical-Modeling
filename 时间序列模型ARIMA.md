@@ -132,15 +132,21 @@ PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段�
 1.  **先 “过滤” 干扰**：比如要算今天（t）和大前天（t-3）的直接相关性，会先把昨天（t-1）、前天（t-2）这两个中间时间点的影响全部排除。
 2.  **再算 “纯关联”**：过滤完之后，剩下的就是今天和大前天之间 “不掺水分” 的直接相关性，这个数值就是 PACF 值。
 
+---
+
 数学上，偏自相关函数（PACF）的定义如下：
 
-如果我们有一个时间序列 {X_t}，那么对于任意的滞后（lag）k，偏自相关函数 φ(k) 可以表示为：
+如果我们有一个时间序列 ${X_t}$，那么对于任意的滞后（lag）k，偏自相关函数 $\varphi(k)$ 可以表示为：
+
+$$$
+
+
 
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3NTc3ODM0OCw5NjUyODQwODUsNDMyND
-QyODQxLDExMjQzNTY4ODgsMTgwMjQ2ODM3MywtMzEyOTc3NTk1
-LDU2OTg5MTY4Niw0MjI4NDg1MDNdfQ==
+eyJoaXN0b3J5IjpbMjMzNzk4MjAxLDk2NTI4NDA4NSw0MzI0ND
+I4NDEsMTEyNDM1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUs
+NTY5ODkxNjg2LDQyMjg0ODUwM119
 -->
