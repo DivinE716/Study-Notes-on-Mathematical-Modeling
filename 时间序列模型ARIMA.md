@@ -88,7 +88,9 @@ $$MA: Y_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2}
 因此，ARIMA 模型将自回归模型（AR）和移动平均模型（MA）结合在一起，同时加入了差分（I）这个操作。而 p, d, q 这三个参数，分别代表了模型中的自回归部分、差分阶数、以及移动平均部分。
 
 ## 4. ACF与PACF
+在时间序列分析中，我们通常需要将非平稳时间序列转化为平稳时间序列，因为许多时间序列模型（如AR、MA和ARIMA模型）都假设输入的数据是平稳的。这种转化可以通过差分或其他预处理方法来实现。
 
+ACF (Auto-Correlation Function)和PACF (Partial Auto-Correlation Function)是时间序列分析中的两个重要工具，它们可以用来检验一个时间序列是否是平稳的，以及帮助确定ARIMA模型的参数。
 
 
 
@@ -96,7 +98,7 @@ $$MA: Y_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2}
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMzUxNTgxMSw0MzI0NDI4NDEsMTEyND
+eyJoaXN0b3J5IjpbMjA1ODUyMzk4MSw0MzI0NDI4NDEsMTEyND
 M1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUsNTY5ODkxNjg2
 LDQyMjg0ODUwM119
 -->
