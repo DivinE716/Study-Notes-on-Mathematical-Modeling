@@ -101,12 +101,15 @@ ACF (Auto-Correlation Function)和PACF (Partial Auto-Correlation Function)是时
 
 如果我们有一个时间序列 $X_t$，那么对于任意的滞后（lag）k，自相关函数 $\rho(k)$可以表示为：
 
-$$\rho(k)=$$
+$$\rho(k)=\frac{Cov(X_t,X_{t+k})}{Var(X_t)}$$
+
+其中， $Cov(X_t,X_{t+k})$是时间点 t 和时间点 t+k 的观测值的协方差， $Var(X_t)$是时间序列 的方差。
+
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1ODMzNzUwNCw0MzI0NDI4NDEsMTEyND
+eyJoaXN0b3J5IjpbMjExMTMzNTAxMyw0MzI0NDI4NDEsMTEyND
 M1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUsNTY5ODkxNjg2
 LDQyMjg0ODUwM119
 -->
