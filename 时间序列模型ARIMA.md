@@ -57,11 +57,11 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 
 差分的过程往往包含两个参数，阶数和滞后，其中阶数即为我们要重点考察的参数 $d$。
 
-差分的本质就是对“相邻”项zuo'chan阶差分就是在原始数据基础上进行n次一阶差分。在现实中，我们使用的高阶差分一般阶数不会太高。在ARIMA模型中，超参数 $d$最常见的取值是0、1、2这些很小的数字。
+差分的本质就是对“相邻”项作差，这里的“相邻”指的是步数为滞后项的一对数据。n阶差分就是在原始数据基础上进行n次一阶差分。在现实中，我们使用的高阶差分一般阶数不会太高。在ARIMA模型中，超参数 $d$最常见的取值是0、1、2这些很小的数字。
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUyMTI0NjkyLDExMjQzNTY4ODgsMTgwMj
-Q2ODM3MywtMzEyOTc3NTk1LDU2OTg5MTY4Niw0MjI4NDg1MDNd
-fQ==
+eyJoaXN0b3J5IjpbMTIyMzQxMjY0OSwxMTI0MzU2ODg4LDE4MD
+I0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsNDIyODQ4NTAz
+XX0=
 -->
