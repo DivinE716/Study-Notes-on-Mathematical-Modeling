@@ -103,13 +103,15 @@ ACF (Auto-Correlation Function)和PACF (Partial Auto-Correlation Function)是时
 
 $$\rho(k)=\frac{Cov(X_t,X_{t+k})}{Var(X_t)}$$
 
-其中， $Cov(X_t,X_{t+k})$是时间点 t 和时间点 t+k 的观测值的协方差， $Var(X_t)$是时间序列 的方差。
+其中， $Cov(X_t,X_{t+k})$是时间点 t 和时间点 t+k 的观测值的协方差， $Var(X_t)$是时间序列 $X_t$的方差。
 
+ACF 的取值范围是 -1 到 1。当 ACF 接近 1 时，表示两个时间点的观测值高度正相关；当 ACF 接近 -1 时，表示两个时间点的观测值高度负相关；当 ACF 接近 0 时，表示两个时间点的观测值之间的相关性较弱。
 
+通过计算不同滞后值下的 ACF，我们可以得到一个关于滞后的函数，这就是自相关函数。我们通常使用自相关图（ACF 图）来直观地表示这个函数
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMTMzNTAxMyw0MzI0NDI4NDEsMTEyND
+eyJoaXN0b3J5IjpbMTQ5NzgwODk4OSw0MzI0NDI4NDEsMTEyND
 M1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUsNTY5ODkxNjg2
 LDQyMjg0ODUwM119
 -->
