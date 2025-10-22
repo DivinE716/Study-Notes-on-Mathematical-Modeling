@@ -110,14 +110,23 @@ ACF 的取值范围是 -1 到 1。当 ACF 接近 1 时，表示两个时间点�
 通过计算不同滞后值下的 ACF，我们可以得到一个关于滞后的函数，这就是自相关函数。我们通常使用自相关图（ACF 图）来直观地表示这个函数。
 
 ### 4.2 偏自相关函数（Partial Auto-correlation Function， PACF）
-**PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段时间的数值之间 “纯纯的” 直接关系，排除了中间那些时间点数值的干扰。**
+PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段时间的数值之间 “纯粹的” 直接关系，排除了中间那些时间点数值的干扰。
 
+要通俗理解，我们可以拆成两个关键概念来看。
 
+#### 1. 先搞懂 “直接相关性”
+
+“直接相关性” 就是不看其他因素，只看两个东西本身的关联。举个生活例子：假设 A 和 C 是朋友，但 A 和 B 是好朋友，B 和 C 也是好朋友。
+
+-   如果只看 A 和 C 走得近，可能是因为两人本身合得来（直接相关），也可能是因为都想跟 B 玩（间接相关）。
+-   “直接相关性” 要算的，就是 A 和 C 抛开 B 的影响后，本身gu。
+
+对应到原文的时间序列：比如看第 10 个数值（t）和第 8 个数值（t-2）的关系时，会先把第 9 个数值（t-1）的影响去掉，只算它俩本身的关联度。
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5NTA1NTQ2Nyw5NjUyODQwODUsNDMyND
+eyJoaXN0b3J5IjpbLTE1Nzk4NjM0Niw5NjUyODQwODUsNDMyND
 QyODQxLDExMjQzNTY4ODgsMTgwMjQ2ODM3MywtMzEyOTc3NTk1
 LDU2OTg5MTY4Niw0MjI4NDg1MDNdfQ==
 -->
