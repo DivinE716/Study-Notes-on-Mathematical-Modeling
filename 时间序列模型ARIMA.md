@@ -55,11 +55,11 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 ## 3. ARIMA中的三个参数
 ### 3.1 d（差分）
 
-差分
+差分的过程往往包含两个参数，阶数和滞后。其中阶数即为wo'm
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MzEwNTA0MiwxMTI0MzU2ODg4LDE4MD
+eyJoaXN0b3J5IjpbLTU4Nzg1NzQyNiwxMTI0MzU2ODg4LDE4MD
 I0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsNDIyODQ4NTAz
 XX0=
 -->
