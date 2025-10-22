@@ -68,6 +68,8 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 
 综上所述，差分运算可以消除数据中激烈的波动，因此可以消除时间序列中的季节性、周期性、节假日等影响。一般我们使用滞后为7的差分消除星期的影响，而使用滞后为12的差分来消除月份的影响（一般这种情况下每个样本所对应的时间单位是月），我们也常常使用滞后4来尝试消除季度所带来的影响。在统计学中，差分运算本质是一种信息提取方式，其最擅长提取的关键信息就是数据中的**周期性**，和其他信息提取方式一样，它会舍弃部分信息、提炼出剩下的信息供模型使用。也因此，差分最重要的意义之一就是能够**让带有周期性的数据变得平稳**。
 
+在实际使用中，我们经常将多步差分和高阶差分混用，最典型的就是在ARIMA模型建模之前：一般我们会先使用多步差分令数据满足ARIMA模型的基础建模条件，再在ARIMA模型中使用低阶的差分帮助模型更好地建模。例如，先对数据进行12步差分、再在模型中进行1阶差分，这样可以令数据变得平稳的同时、又提取出数据中的周期性，极大地提升模型对数据的拟合精度。
+
 ### 3.2 p和q
 在 ARIMA(p, d, q) 模型中: 
 
@@ -88,7 +90,7 @@ $$MA: Y_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2}
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMyNDQyODQxLDExMjQzNTY4ODgsMTgwMj
-Q2ODM3MywtMzEyOTc3NTk1LDU2OTg5MTY4Niw0MjI4NDg1MDNd
-fQ==
+eyJoaXN0b3J5IjpbMzUxNjQxMzk1LDQzMjQ0Mjg0MSwxMTI0Mz
+U2ODg4LDE4MDI0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYs
+NDIyODQ4NTAzXX0=
 -->
