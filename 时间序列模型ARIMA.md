@@ -138,7 +138,7 @@ PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段�
 
 如果我们有一个时间序列 ${X_t}$，那么对于任意的滞后（lag）k，偏自相关函数 $\varphi(k)$ 可以表示为：
 
-$$$
+$$\varphi(k)=Cov(X_t-E[X_t|X_{t-1},\dots,X_{t-k+1}],X_{t-k}-$$
 
 
 
@@ -146,7 +146,7 @@ $$$
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjMzNzk4MjAxLDk2NTI4NDA4NSw0MzI0ND
-I4NDEsMTEyNDM1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUs
-NTY5ODkxNjg2LDQyMjg0ODUwM119
+eyJoaXN0b3J5IjpbMjA4Nzc3MjQyMCw5NjUyODQwODUsNDMyND
+QyODQxLDExMjQzNTY4ODgsMTgwMjQ2ODM3MywtMzEyOTc3NTk1
+LDU2OTg5MTY4Niw0MjI4NDg1MDNdfQ==
 -->
