@@ -97,6 +97,8 @@ ACF (Auto-Correlation Function)和PACF (Partial Auto-Correlation Function)是时
 
 这是一个相对宽泛的定义，而在时间序列分析中，ACF有着更为严格的定义。对于任意的滞后（lag）k，我们都计算出在时间t和时间t+k的数据点之间的**协方差**，然后除以该时间序列的**方差**。这样得到的结果反映了时间序列自身的相关性。
 
+---
+
 数学上，自相关函数（ACF）的定义如下：
 
 如果我们有一个时间序列 $X_t$，那么对于任意的滞后（lag）k，自相关函数 $\rho(k)$可以表示为：
@@ -108,6 +110,8 @@ $$\rho(k)=\frac{Cov(X_t,X_{t+k})}{Var(X_t)}$$
 ACF 的取值范围是 -1 到 1。当 ACF 接近 1 时，表示两个时间点的观测值高度正相关；当 ACF 接近 -1 时，表示两个时间点的观测值高度负相关；当 ACF 接近 0 时，表示两个时间点的观测值之间的相关性较弱。
 
 通过计算不同滞后值下的 ACF，我们可以得到一个关于滞后的函数，这就是自相关函数。我们通常使用自相关图（ACF 图）来直观地表示这个函数。
+
+---
 
 ### 4.2 偏自相关函数（Partial Auto-correlation Function， PACF）
 PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段时间的数值之间 “纯粹的” 直接关系，排除了中间那些时间点数值的干扰。
@@ -153,7 +157,8 @@ PACF的取值范围也是 -1 到 1。当 PACF 接近 1 时，表示两个时间�
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODIwNDM4OTcsLTIwNzY5NDEyNjAsOT
-Y1Mjg0MDg1LDQzMjQ0Mjg0MSwxMTI0MzU2ODg4LDE4MDI0Njgz
-NzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsNDIyODQ4NTAzXX0=
+eyJoaXN0b3J5IjpbNzY1MDQ5MTMsLTE3ODIwNDM4OTcsLTIwNz
+Y5NDEyNjAsOTY1Mjg0MDg1LDQzMjQ0Mjg0MSwxMTI0MzU2ODg4
+LDE4MDI0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsNDIyOD
+Q4NTAzXX0=
 -->
