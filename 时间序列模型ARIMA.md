@@ -75,7 +75,7 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 
 $$AR: Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + \xi_t$$
 
-其中， $\varphi_1, \varphi_2, \dots, \varphi_p$ 是模型参数，分别衡量滞后 1 期、滞后 2 期…… 滞后 p 期的因变量 Y_{t-1}, Y_{t-2}, \dots, Y_{t-p}\) 对当前值 \(Y_t\) 的影响程度，c 是常数， $\xi_t$ 是白噪声。这个方程的阶数 p 决定了模型回溯观测值的数量。 
+其中， $\varphi_1, \varphi_2, \dots, \varphi_p$ 是模型参数，分别衡量滞后 1 期、滞后 2 期…… 滞后 p 期的因变量 $Y_{t-1}, Y_{t-2}, \dots, Y_{t-p}$对当前值  $Y_t$的影响程度。c 是常数， $\xi_t$ 是白噪声。这个方程的阶数 p 决定了模型回溯观测值的数量。 
 
 **q 代表 "移动平均部分 (Moving Average)"**：这部分描述了模型中使用的错误项的滞后值（即前面 q 个期的值）。移动平均模型是将当前值和过去的白噪声之间建立关系。具体的数学形式如下: 
 
@@ -88,7 +88,7 @@ $$MA: Y_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2}
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDIyMzMyMywxMTI0MzU2ODg4LDE4MD
-I0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsNDIyODQ4NTAz
-XX0=
+eyJoaXN0b3J5IjpbNDMyNDQyODQxLDExMjQzNTY4ODgsMTgwMj
+Q2ODM3MywtMzEyOTc3NTk1LDU2OTg5MTY4Niw0MjI4NDg1MDNd
+fQ==
 -->
