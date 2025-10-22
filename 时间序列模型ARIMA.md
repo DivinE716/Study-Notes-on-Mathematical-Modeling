@@ -95,17 +95,18 @@ ACF (Auto-Correlation Function)和PACF (Partial Auto-Correlation Function)是时
 ### 4.1 自相关函数ACF (Auto-Correlation Function)
 在实际应用中，ACF通常被定义为**当前时间点上的观测值**与**历史时间点观测值**之间的相关性。这种相关性可以用多种方法来衡量，其中最常用的是皮尔逊相关系数。
 
-这是一个相对宽泛的定义，而在时间序列分析中，ACF有着更为严格的定义。对于任意的滞后（lag）k，我们都计算出在时间t和时间t+k的数据点之间的**协方差**，然后除以该时间序列的**方差。这样得到的结果反映了时间序列自身的相关性。
+这是一个相对宽泛的定义，而在时间序列分析中，ACF有着更为严格的定义。对于任意的滞后（lag）k，我们都计算出在时间t和时间t+k的数据点之间的**协方差**，然后除以该时间序列的**方差**。这样得到的结果反映了时间序列自身的相关性。
 
 数学上，自相关函数（ACF）的定义如下：
 
+如果我们有一个时间序列 $X_t$，那么对于任意的滞后（lag）k，自相关函数 $\rho(k)$可以表示为：
 
-
+$$\rho(k)=$$
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE4MDM2NjQ0LDQzMjQ0Mjg0MSwxMTI0Mz
-U2ODg4LDE4MDI0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYs
-NDIyODQ4NTAzXX0=
+eyJoaXN0b3J5IjpbMTk1ODMzNzUwNCw0MzI0NDI4NDEsMTEyND
+M1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUsNTY5ODkxNjg2
+LDQyMjg0ODUwM119
 -->
