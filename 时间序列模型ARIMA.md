@@ -66,10 +66,11 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 3. **n阶差分（n-th Order Differencing）**：n阶差分是差分的一种更一般的形式。一阶差分是比较每个观察值与其前一步的观察值，二阶差分是对一阶差分序列进行再一次的差分（也就是比较一阶差分序列中的每个值与其前一步的值）。更一般地，n阶差分就是连续进行n次一阶差分。
 4. **多步差分（Multi-step Differencing）**：这个术语可能根据上下文有不同的含义。它可能指的是n阶差分（即进行多次连续的一阶差分）。也可能指的是滞后差分，比如比较每个观察值与其几步前的观察值。
 
-zong'sha
+综上所述，差分运算可以消除数据中激烈的波动，因此可以消除时间序列中的季节性、周期性、节假日等影响。一般我们使用滞后为7的差分消除星期的影响，而使用滞后为12的差分来消除月份的影响（一般这种情况下每个样本所对应的时间单位是月），我们也常常使用滞后4来尝试消除季度所带来的影响。在统计学中，差分运算本质是一种信息提取方式，其最擅长提取的关键信息就是数据中的**周期性**，和其他信息提取方式一样，它会舍弃部分信息、提炼出剩下的信息供模型使用。也因此，差分最重要的意义之一就是能够**让带有周期性的数据变得平稳**。
+
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1NjA1NzM3OSwxMTI0MzU2ODg4LDE4MD
+eyJoaXN0b3J5IjpbMjEyMDYzNTMyOSwxMTI0MzU2ODg4LDE4MD
 I0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsNDIyODQ4NTAz
 XX0=
 -->
