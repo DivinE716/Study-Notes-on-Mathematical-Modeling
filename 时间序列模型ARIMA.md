@@ -87,10 +87,16 @@ $$MA: Y_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2}
 
 因此，ARIMA 模型将自回归模型（AR）和移动平均模型（MA）结合在一起，同时加入了差分（I）这个操作。而 p, d, q 这三个参数，分别代表了模型中的自回归部分、差分阶数、以及移动平均部分。
 
+## 4. ACF与PACF
+
+
+
+
+
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUxNjQxMzk1LDQzMjQ0Mjg0MSwxMTI0Mz
-U2ODg4LDE4MDI0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYs
-NDIyODQ4NTAzXX0=
+eyJoaXN0b3J5IjpbMTYzMzUxNTgxMSw0MzI0NDI4NDEsMTEyND
+M1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUsNTY5ODkxNjg2
+LDQyMjg0ODUwM119
 -->
