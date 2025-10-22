@@ -140,13 +140,17 @@ PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段�
 
 $$\varphi(k)=\frac{Cov(X_t-E[X_t|X_{t-1},\dots,X_{t-k+1}],X_{t-k}-E[X_{t-k}|X_{t-k+1},\dots,X_{t-1}])}{Var(X_t)}$$
 
+其中，Cov表示协方差，E表示期望，也就是平均值，Var表示方差。我们可以看到，PACF的计算过程实际上是先去掉其他更早期的滞后观测值的影响，然后再计算相关性。
 
+PACF的取值范围也是 -1 到 1。当 PACF 接近 1 时，表示两个时间点的观测值高度正相关；当 PACF 接近 -1 时，表示两个时间点的观测值高度负相关；当 PACF 接近 0 时，表示两个时间点的观测值之间的直接相关性较弱。
+
+通过计算不同滞后值下的 PACF，我们可以得到一个关于滞后的函数，这就是偏自相关函数。我们通常使用偏自相关图（PACF 图）来直观地表示这个函数
 
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNDk0Mzk4MCw5NjUyODQwODUsNDMyND
-QyODQxLDExMjQzNTY4ODgsMTgwMjQ2ODM3MywtMzEyOTc3NTk1
-LDU2OTg5MTY4Niw0MjI4NDg1MDNdfQ==
+eyJoaXN0b3J5IjpbNTMwMTM5NjI0LDk2NTI4NDA4NSw0MzI0ND
+I4NDEsMTEyNDM1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUs
+NTY5ODkxNjg2LDQyMjg0ODUwM119
 -->
