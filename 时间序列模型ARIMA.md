@@ -69,11 +69,12 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 综上所述，差分运算可以消除数据中激烈的波动，因此可以消除时间序列中的季节性、周期性、节假日等影响。一般我们使用滞后为7的差分消除星期的影响，而使用滞后为12的差分来消除月份的影响（一般这种情况下每个样本所对应的时间单位是月），我们也常常使用滞后4来尝试消除季度所带来的影响。在统计学中，差分运算本质是一种信息提取方式，其最擅长提取的关键信息就是数据中的**周期性**，和其他信息提取方式一样，它会舍弃部分信息、提炼出剩下的信息供模型使用。也因此，差分最重要的意义之一就是能够**让带有周期性的数据变得平稳**。
 
 ### 3.2 p和q
+在 ARIMA(p, d, q) 模型中: **p 代表 "自回归部分 (Autoregressive)"**：这部分描述了模型中使用的观测值的滞后值（即前面 p 个期的值）。自回归模型的出发点是认为观测值是它前面的 p 个值的线性组合。具体的数学形式如下: $$ AR: Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + \xi_t \tag{14} $$ 其中，$\epsilon_{t-1}, \epsilon_{t-2}, \dots, \epsilon_{t-q}$ 是模型参数，c 是常数，$\xi_t$ 是白噪声。这个方程的阶数 p 决定了模型回溯观测值的数量。 **q 代表 "移动平均部分 (Moving Average)"**：这部分描述了模型中使用的错误项的滞后值（即前面 q 个期的值）。移动平均模型是将当前值和过去的白噪声之间建立关系。具体的数学形式如下: $$ MA: Y_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2} + \dots + \theta_q \epsilon_{t-q} \tag{15} $$ 其中，$\theta_1, \theta_2, \dots, \theta_q$ 是模型参数，c 是常数，$\epsilon_t$ 是当前时期的白噪声，$\epsilon_{t-1}, \epsilon_{t-2}, \dots, \epsilon_{t-q}$ 是过去的白噪声。这个方程的阶数 q 决定了模型回溯白噪声的数量。 因此，ARIMA 模型将自回归模型（AR）和移动平均模型（MA）结合在一起，同时加入了差分（I）这个操作。而 p, d, q 这三个参数，分别代表了模型中的自回归部分、差分阶数、以及移动平均部分。
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4MTcwMDc4LDExMjQzNTY4ODgsMTgwMj
-Q2ODM3MywtMzEyOTc3NTk1LDU2OTg5MTY4Niw0MjI4NDg1MDNd
-fQ==
+eyJoaXN0b3J5IjpbLTYxOTg4OTYyNSwxMTI0MzU2ODg4LDE4MD
+I0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsNDIyODQ4NTAz
+XX0=
 -->
