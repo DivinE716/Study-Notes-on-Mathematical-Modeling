@@ -119,14 +119,14 @@ PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段�
 “直接相关性” 就是不看其他因素，只看两个东西本身的关联。举个生活例子：假设 A 和 C 是朋友，但 A 和 B 是好朋友，B 和 C 也是好朋友。
 
 -   如果只看 A 和 C 走得近，可能是因为两人本身合得来（直接相关），也可能是因为都想跟 B 玩（间接相关）。
--   “直接相关性” 要算的，就是 A 和 C 抛开 B 的影响后，本身gu。
+-   “直接相关性” 要算的，就是 A 和 C 抛开 B 的影响后，本身关系有多好。
 
-对应到原文的时间序列：比如看第 10 个数值（t）和第 8 个数值（t-2）的关系时，会先把第 9 个数值（t-1）的影响去掉，只算它俩本身的关联度。
+考虑一个时间序列 $X_t$：分析第10 个数值 $x_{10}$和第 8 个数值 $x_{10}$的直接相关性时，会先把第9个数值 $x_{10}$的影响去掉，只算它俩本身的关联度。
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Nzk4NjM0Niw5NjUyODQwODUsNDMyND
-QyODQxLDExMjQzNTY4ODgsMTgwMjQ2ODM3MywtMzEyOTc3NTk1
-LDU2OTg5MTY4Niw0MjI4NDg1MDNdfQ==
+eyJoaXN0b3J5IjpbNTg4Mjc0ODY2LDk2NTI4NDA4NSw0MzI0ND
+I4NDEsMTEyNDM1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUs
+NTY5ODkxNjg2LDQyMjg0ODUwM119
 -->
