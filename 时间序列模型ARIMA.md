@@ -59,9 +59,19 @@ $$Y_t = c + \varphi_1 Y_{t-1} + \varphi_2 Y_{t-2} + \dots + \varphi_p Y_{t-p} + 
 
 差分的本质就是对“相邻”项作差，这里的“相邻”指的是步数为**滞后项**的一对数据。阶数便指示了差分运算的次数，即n阶差分就是在原始数据基础上进行n次一阶差分。在现实中，我们使用的高阶差分一般阶数不会太高。在ARIMA模型中，超参数 $d$最常见的取值是0、1、2这些很小的数字。
 
+总结起来就是：
+
+1. 差分（Differencing）：这是一种预处理技术，用于使非平稳时间序列变得平稳。在时间序列中进行一阶差分，就是将每个观察值与其前一步的观察值进行比较，然后取这两个观察值之间的差异。例如，如果我们有一个时间序列 $x1, x2, x3, \dots, xn$，那么一阶差分序列将是 $x2 - x1, x3 - x2, \dots, xn - xn-1$。 
+
+2、滞后差分（Lagged Differencing）：这个术语和"差分"非常相似。当我们说"滞后"时，我们是在说比较一个观察值和其"前一步"或"几步前"的观察值。因此，"滞后一阶差分"实际上就是常规的一阶差分，因为我们比较的是每个观察值与其前一步的观察值。如果我们进行的是"滞后k阶差分"，那么我们比较的是每个观察值与其k步前的观察值。
+
+3、n阶差分（n-th Order Differencing）：n阶差分是差分的一种更一般的形式。一阶差分是比较每个观察值与其前一步的观察值，二阶差分是对一阶差分序列进行再一次的差分（也就是比较一阶差分序列中的每个值与其前一步的值）。更一般地，n阶差分就是连续进行n次一阶差分。
+
+4、多步差分（Multi-step Differencing）：这个术语可能根据上下文有不同的含义。它可能指的是n阶差分（即进行多次连续的一阶差分）。也可能指的是滞后差分，比如比较每个观察值与其几步前的观察值。
+
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTkxNjM1OCwxMTI0MzU2ODg4LDE4MD
-I0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsNDIyODQ4NTAz
-XX0=
+eyJoaXN0b3J5IjpbNTAzMTc2NzEwLDExMjQzNTY4ODgsMTgwMj
+Q2ODM3MywtMzEyOTc3NTk1LDU2OTg5MTY4Niw0MjI4NDg1MDNd
+fQ==
 -->
