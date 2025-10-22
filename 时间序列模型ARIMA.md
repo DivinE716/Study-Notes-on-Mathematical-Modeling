@@ -92,13 +92,16 @@ $$MA: Y_t = \mu + \epsilon_t + \theta_1 \epsilon_{t-1} + \theta_2 \epsilon_{t-2}
 
 ACF (Auto-Correlation Function)和PACF (Partial Auto-Correlation Function)是时间序列分析中的两个重要工具，它们可以用来检验一个时间序列是否是平稳的，以及帮助确定ARIMA模型的参数。
 
+### 4.1 自相关函数ACF (Auto-Correlation Function)
+
+
 
 
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODUyMzk4MSw0MzI0NDI4NDEsMTEyND
+eyJoaXN0b3J5IjpbLTM2MTM5NjAyNCw0MzI0NDI4NDEsMTEyND
 M1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUsNTY5ODkxNjg2
 LDQyMjg0ODUwM119
 -->
