@@ -121,12 +121,26 @@ PACF（偏自相关系数）是用来衡量时间序列里，两个相隔一段�
 -   如果只看 A 和 C 走得近，可能是因为两人本身合得来（直接相关），也可能是因为都想跟 B 玩（间接相关）。
 -   “直接相关性” 要算的，就是 A 和 C 抛开 B 的影响后，本身关系有多好。
 
-考虑一个时间序列 $X_t$：分析第10 个数值 $x_{10}$和第 8 个数值 $x_{10}$的直接相关性时，会先把第9个数值 $x_{10}$的影响去掉，只算它俩本身的关联度。
+考虑一个时间序列 $X_t$：分析第 10 个数值 $x_{10}$和第 8 个数值 $x_{8}$的直接相关性时，会先把第 9 个数值 $x_{9}$的影响去掉，只算它俩本身的关联度。
+
+#### 2. PACF：时间序列里的 “纯关系检测器”
+
+在时间序列分析里，每个数值都和过去的数值有关联（比如今天的气温和昨天、前天的都有关）。PACF 的作用就是 “提纯” 这种关联。
+
+它的逻辑可以简单拆成两步：
+
+1.  **先 “过滤” 干扰**：比如要算今天（t）和大前天（t-3）的直接相关性，会先把昨天（t-1）、前天（t-2）这两个中间时间点的影响全部排除。
+2.  **再算 “纯关联”**：过滤完之后，剩下的就是今天和大前天之间 “不掺水分” 的直接相关性，这个数值就是 PACF 值。
+
+数学上，偏自相关函数（PACF）的定义如下：
+
+如果我们有一个时间序列 {X_t}，那么对于任意的滞后（lag）k，偏自相关函数 φ(k) 可以表示为：
+
 
 
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg4Mjc0ODY2LDk2NTI4NDA4NSw0MzI0ND
-I4NDEsMTEyNDM1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUs
-NTY5ODkxNjg2LDQyMjg0ODUwM119
+eyJoaXN0b3J5IjpbMTY3NTc3ODM0OCw5NjUyODQwODUsNDMyND
+QyODQxLDExMjQzNTY4ODgsMTgwMjQ2ODM3MywtMzEyOTc3NTk1
+LDU2OTg5MTY4Niw0MjI4NDg1MDNdfQ==
 -->
