@@ -109,9 +109,15 @@ ACF 的取值范围是 -1 到 1。当 ACF 接近 1 时，表示两个时间点�
 
 通过计算不同滞后值下的 ACF，我们可以得到一个关于滞后的函数，这就是自相关函数。我们通常使用自相关图（ACF 图）来直观地表示这个函数。
 
+### 4.2 偏自相关函数（Partial Auto-correlation Function， PACF）
+
+
+
+
+
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwNjA5NzgyMSw0MzI0NDI4NDEsMTEyND
-M1Njg4OCwxODAyNDY4MzczLC0zMTI5Nzc1OTUsNTY5ODkxNjg2
-LDQyMjg0ODUwM119
+eyJoaXN0b3J5IjpbOTY1Mjg0MDg1LDQzMjQ0Mjg0MSwxMTI0Mz
+U2ODg4LDE4MDI0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYs
+NDIyODQ4NTAzXX0=
 -->
