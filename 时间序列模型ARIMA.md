@@ -151,15 +151,10 @@ PACF的取值范围也是 -1 到 1。当 PACF 接近 1 时，表示两个时间�
 通过计算不同滞后值下的 PACF，我们可以得到一个关于滞后的函数，这就是偏自相关函数。我们通常使用偏自相关图（PACF 图）来直观地表示这个函数。
 
 
-**看到6.4 ACF和PACF的图形解读**
-
-
-
-
 >参考：[时间序列模型(四)：ARIMA模型 - 知乎](https://zhuanlan.zhihu.com/p/634120397)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDQwOTU5MTQsLTE3ODIwNDM4OTcsLT
-IwNzY5NDEyNjAsOTY1Mjg0MDg1LDQzMjQ0Mjg0MSwxMTI0MzU2
-ODg4LDE4MDI0NjgzNzMsLTMxMjk3NzU5NSw1Njk4OTE2ODYsND
-IyODQ4NTAzXX0=
+eyJoaXN0b3J5IjpbMjQ5MjYzNjEsLTEyMDQwOTU5MTQsLTE3OD
+IwNDM4OTcsLTIwNzY5NDEyNjAsOTY1Mjg0MDg1LDQzMjQ0Mjg0
+MSwxMTI0MzU2ODg4LDE4MDI0NjgzNzMsLTMxMjk3NzU5NSw1Nj
+k4OTE2ODYsNDIyODQ4NTAzXX0=
 -->
